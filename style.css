@@ -1,0 +1,19 @@
+/* media query for adjusting the sizing of the carousel on large screens */
+@media (min-width: 1200px) {
+  #carousel {
+    width: 25% !important;
+  }
+}
+
+/* media query for adjusting the sizing of the carousel on medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  #carousel {
+    width: 50% !important;
+  }
+}
+
+#background-carousel {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+}
