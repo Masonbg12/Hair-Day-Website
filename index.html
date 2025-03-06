@@ -48,7 +48,8 @@
 
     <title>Hair Day</title>
   </head>
-  <body class="container-fluid">
+  <!--Question about background and best practice-->
+  <body class="container-fluid" style="background: url('background.jpg') no-repeat center center / cover">
     <!--Header Section-->
     <header id="header" class="d-flex justify-content-center align-items-center min-vh-100"
     style="position: relative;
@@ -60,7 +61,7 @@
     overflow: hidden;">
       <img
       style="position: absolute;
-      width: 80%;
+      width: 60%;
       transform: translateZ(0px);
       transition: transform 0.1s linear;"
       src="Artboard 19.png" alt="Header Image" />
@@ -92,14 +93,18 @@
     <main>
       <!--Promotion Section-->
       <section class="container text-center">
-        <article>
-          <h1>Promotion</h1>
+        <article class="bg-dark bg-gradient border border-dark rounded d-flex flex-column align-items-center">
+          <h1 class="text-decoration-underline">VIP MEMBERSHIPS</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            non neque, facilis deleniti dicta quasi provident eos excepturi,
-            odio autem distinctio fugit dolorem officia molestiae. Distinctio
-            natus atque eum ducimus!
+            Sign up for VIP memberships today and get regular services at discounted rates!
           </p>
+          <button
+            type="button"
+            class="btn btn-primary w-25"
+            href="book.html"
+          >
+            Explore Options
+          </button>
         </article>
       </section>
       <!--Carousel Section-->
