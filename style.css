@@ -1,3 +1,9 @@
+:root {
+  --primaryColor: rgb(201, 92, 74);
+  --secondaryColor: rgb(83, 83, 211);
+  --tertiaryColor: rgb(242, 223, 209);
+}
+
 /* media query for adjusting the sizing of the carousel on large screens */
 @media (min-width: 1200px) {
   #carousel {
@@ -16,4 +22,13 @@
   background-size: cover;
   background-position: center;
   aspect-ratio: 1/1;
+}
+
+li > a {
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: var(--primaryColor);
 }
