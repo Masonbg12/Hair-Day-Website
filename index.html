@@ -6,7 +6,7 @@
     add title for carousel
     add promotion
     make style look better-->
-    
+
     <!--Meta Tags-->
     <meta property="og:title" content="Hair Day" />
     <meta property="og:type" content="website" />
@@ -36,39 +36,53 @@
     <!--Javascript link for parallax scrolling effect-->
     <script>
       let lastScrollY = 0;
-      function smoothParallax() {
-          let scrollY = window.scrollY;
-          let depth = scrollY * 4;
-          document.querySelector("#header img").style.transform = `translateZ(${-depth}px)`;
-          lastScrollY = scrollY;
-          requestAnimationFrame(smoothParallax);
+      function parallax() {
+        let scrollY = window.scrollY;
+        let depth = scrollY * 4;
+        document.querySelector(
+          "#header img"
+        ).style.transform = `translateZ(${-depth}px)`;
+        lastScrollY = scrollY;
+        requestAnimationFrame(parallax);
       }
-      requestAnimationFrame(smoothParallax);
-  </script>
+      requestAnimationFrame(parallax);
+    </script>
 
     <title>Hair Day</title>
   </head>
   <!--Question about background and best practice-->
-  <body class="container-fluid" style="background: url('background.jpg') no-repeat center center / cover">
+  <body
+    class="container-fluid"
+    style="background: url('background.jpg') no-repeat center center / cover"
+  >
     <!--Header Section-->
-    <header id="header" class="d-flex justify-content-center align-items-center min-vh-100"
-    style="position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 800px;
-    overflow: hidden;">
+    <header
+      id="header"
+      class="d-flex justify-content-center align-items-center min-vh-100"
+      style="
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        overflow: hidden;
+      "
+    >
       <img
-      style="position: absolute;
-      width: 60%;
-      transform: translateZ(0px);
-      transition: transform 0.1s linear;
-      background-color: rgba(83, 83, 211, 0.8);
-      border-radius: 5px;"
-      src="Artboard 19.png" alt="Header Image" />
+        style="
+          position: absolute;
+          width: 60%;
+          transform: translateZ(0px);
+          transition: transform 0.1s linear;
+          background-color: var(--secondaryColor);
+          border-radius: 5px;
+        "
+        src="Artboard 19.png"
+        alt="Header Image"
+      />
     </header>
-    
+
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
       <div class="container-fluid">
@@ -95,14 +109,18 @@
     <main>
       <!--Promotion Section-->
       <section class="container text-center">
-        <article class="bg-dark bg-gradient border border-dark rounded d-flex flex-column align-items-center">
+        <article
+          class="bg-dark bg-gradient border border-dark rounded d-flex flex-column align-items-center"
+        >
           <h1 class="text-decoration-underline">VIP MEMBERSHIPS</h1>
           <p>
-            Sign up for VIP memberships today and get regular services at discounted rates!
+            Sign up for VIP memberships today and get regular services at
+            discounted rates!
           </p>
           <button
             type="button"
-            class="btn btn-primary w-25"
+            id="custom-btn"
+            class="btn w-25"
             href="book.html"
           >
             Explore Options
@@ -113,9 +131,16 @@
       <section>
         <div
           id="carousel"
+          style="background-color: var(--secondaryColor)"
           class="carousel carousel-dark slide w-100 mx-auto"
           data-bs-ride="carousel"
         >
+          <h2
+            class="carousel-title d-block text-center rounded"
+            style="background-color: var(--secondaryColor)"
+          >
+            Meet Our Professionals
+          </h2>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="9000">
               <article class="card">
@@ -123,10 +148,11 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff1.webp');"
+                    style="background-image: url('staff1.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Pria</h5>
                       <h6 class="card-title fst-italic m-0">Owner, Colorist</h6>
@@ -135,6 +161,7 @@
                       </p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -151,10 +178,11 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff2.webp');"
+                    style="background-image: url('staff2.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Garry</h5>
                       <h6 class="card-title fst-italic m-0">Stylist</h6>
@@ -163,6 +191,7 @@
                       </p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -179,10 +208,11 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff3.webp');"
+                    style="background-image: url('staff3.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Celine</h5>
                       <h6 class="card-title fst-italic m-0">Stylist</h6>
@@ -191,6 +221,7 @@
                       </p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -207,10 +238,11 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff4.webp');"
+                    style="background-image: url('staff4.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Sarah</h5>
                       <h6 class="card-title fst-italic m-0">Manicurist</h6>
@@ -219,6 +251,7 @@
                       </p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -235,18 +268,18 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff5.webp');"
+                    style="background-image: url('staff5.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Aaron</h5>
                       <h6 class="card-title fst-italic m-0">Colorist</h6>
-                      <p class="card-text fw-light m-1">
-                        "Color is my life!"
-                      </p>
+                      <p class="card-text fw-light m-1">"Color is my life!"</p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -263,10 +296,11 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff6.webp');"
+                    style="background-image: url('staff6.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Daphne</h5>
                       <h6 class="card-title fst-italic m-0">Make-up Artist</h6>
@@ -275,6 +309,7 @@
                       </p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -291,10 +326,11 @@
                   <div
                     id="background-carousel"
                     class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff7.webp');"
+                    style="background-image: url('staff7.webp')"
                   >
                     <div
-                      class="bg-light bg-gradient border border-dark rounded d-flex flex-column"
+                      id="staff-card"
+                      class="border border-dark rounded d-flex flex-column"
                     >
                       <h5 class="card-title fw-bold m-0">Brittney</h5>
                       <h6 class="card-title fst-italic m-0">Colorist</h6>
@@ -303,6 +339,7 @@
                       </p>
                       <button
                         type="button"
+                        id="custom-btn"
                         class="btn btn-primary w-50 d-block mx-auto mb-1"
                         href="book.html"
                       >
@@ -313,36 +350,40 @@
                 </div>
               </article>
             </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
 
     <!--Footer-->
-    <footer class="d-flex flex-row gap-3 p-3">
+    <footer
+      class="d-flex flex-row"
+      style="background-color: var(--secondaryColor)"
+    >
       <div class="w-50 text-center">
         <img class="img-fluid mx-auto d-block" src="Artboard 22.png" />
       </div>

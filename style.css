@@ -3,6 +3,21 @@
   --secondaryColor: rgb(83, 83, 211);
   --tertiaryColor: rgb(242, 223, 209);
 }
+#custom-btn {
+  background-color: var(--secondaryColor);
+  color: white;
+}
+
+#custom-btn:hover {
+  background-color: var(--primaryColor);
+}
+
+#carousel {
+  padding: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
 
 /* media query for adjusting the sizing of the carousel on large screens */
 @media (min-width: 1200px) {
@@ -16,6 +31,18 @@
   #carousel {
     width: 50% !important;
   }
+}
+
+article.card {
+  border: none;
+}
+
+.card-body {
+  background-color: var(--secondaryColor);
+}
+
+#staff-card {
+  background-color: var(--primaryColor);
 }
 
 #background-carousel {
