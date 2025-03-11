@@ -3,27 +3,12 @@
   --secondaryColor: rgb(83, 83, 211);
   --tertiaryColor: rgb(242, 223, 209);
 }
-#custom-btn {
-  background-color: var(--secondaryColor);
-  color: white;
-}
-
-#custom-btn:hover {
-  background-color: var(--primaryColor);
-}
 
 #carousel {
   padding: 20px;
   border: 5px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
-}
-
-/* media query for adjusting the sizing of the carousel on large screens */
-@media (min-width: 1200px) {
-  #carousel {
-    width: 25% !important;
-  }
 }
 
 /* media query for adjusting the sizing of the carousel on medium screens (tablets) */
@@ -33,16 +18,35 @@
   }
 }
 
-article.card {
-  border: none;
-}
+/* media query for adjusting the sizing of the carousel on large screens */
+@media (min-width: 1200px) {
+  #carousel {
+    width: 25% !important;
+  }
 
-.card-body {
-  background-color: var(--secondaryColor);
-}
+  #carousel::before {
+    content: "";
+    background: url("rose_skull.png") no-repeat center;
+    position: absolute;
+    left: -100%;
+    top: 50%;
+    width: 400px;
+    height: 418px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
 
-#staff-card {
-  background-color: var(--primaryColor);
+  #carousel::after {
+    content: "";
+    background: url("rose_skull.png") no-repeat center;
+    position: absolute;
+    right: -100%;
+    top: 50%;
+    width: 400px;
+    height: 418px;
+    transform: translateY(-50%) scaleX(-1);
+    z-index: 1;
+  }
 }
 
 #background-carousel {
@@ -58,4 +62,25 @@ li > a {
 
 li > a:hover {
   color: var(--primaryColor);
+}
+
+article.card {
+  border: none;
+}
+
+.card-body {
+  background-color: var(--secondaryColor);
+}
+
+#staff-card {
+  background-color: var(--primaryColor);
+}
+
+#custom-btn {
+  background-color: var(--secondaryColor);
+  color: white;
+}
+
+#custom-btn:hover {
+  background-color: var(--primaryColor);
 }
