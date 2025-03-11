@@ -27,11 +27,12 @@
   #carousel::before {
     content: "";
     background: url("rose_skull.png") no-repeat center;
+    background-size: contain;
     position: absolute;
     left: -150%;
     top: 50%;
     width: 400px;
-    height: 360px;
+    height: 380px;
     transform: translateY(-50%);
     z-index: 1;
   }
@@ -39,11 +40,12 @@
   #carousel::after {
     content: "";
     background: url("rose_skull.png") no-repeat center;
+    background-size: contain;
     position: absolute;
     right: -150%;
     top: 50%;
     width: 400px;
-    height: 360px;
+    height: 380px;
     transform: translateY(-50%) scaleX(-1);
     z-index: 1;
   }
@@ -53,6 +55,7 @@
   #carousel::before {
     content: "";
     background: url("rose_skull.png") no-repeat center;
+    background-size: contain;
     position: absolute;
     left: -100%;
     top: 50%;
@@ -65,6 +68,7 @@
   #carousel::after {
     content: "";
     background: url("rose_skull.png") no-repeat center;
+    background-size: contain;
     position: absolute;
     right: -100%;
     top: 50%;
