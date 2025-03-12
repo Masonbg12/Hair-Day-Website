@@ -1,3 +1,4 @@
+/* root color pallette */
 :root {
   --primaryColor: rgb(201, 92, 74);
   --secondaryColor: rgb(27, 143, 52);
@@ -11,7 +12,7 @@
   }
 }
 
-/* media query for adjusting the sizing of the carousel on large screens */
+/* media query for adjusting the sizing of the carousel and images on large screens */
 @media (min-width: 1200px) {
   #carousel {
     width: 25% !important;
@@ -72,6 +73,7 @@
   }
 }
 
+/* custom css styling for various elements section */
 #background-carousel {
   background-size: cover;
   background-position: center;
@@ -96,7 +98,7 @@ article.card {
 }
 
 #staff-card {
-  background-color: white;
+  background-color: var(--tertiaryColor);
 }
 
 #custom-btn {
