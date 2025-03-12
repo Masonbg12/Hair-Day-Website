@@ -53,378 +53,383 @@
     <title>Hair Day</title>
   </head>
 
-  <body
-    class="container-fluid p-0"
-    style="background: url('background.jpg') no-repeat center center / cover"
-  >
-    <!--Header Section-->
-    <header
-      id="header"
-      class="d-flex justify-content-center align-items-center min-vh-100"
-      style="
-        position: relative;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 800px;
-        overflow: hidden;
-      "
-    >
-      <img
+  <body class="container-fluid p-0">
+    <div class="blurred-background"></div>
+    <div class="content">
+      <!--Header Section-->
+      <header
+        id="header"
+        class="d-flex justify-content-center align-items-center min-vh-100"
         style="
-          position: absolute;
-          width: 60%;
-          transform: translateZ(0px);
-          transition: transform 0.1s linear;
-          background-color: var(--secondaryColor);
-          border-radius: 5px;
+          position: relative;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          perspective: 800px;
+          overflow: hidden;
         "
-        src="Artboard 19.png"
-        alt="Header Image"
-      />
-    </header>
-
-    <!--Nav Bar-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark text-center w-100 sticky-top py-lg-4"
-    >
-      <div class="container-fluid">
-        <div class="navbar-collapse justify-content-center">
-          <ul class="navbar-nav d-flex w-100 justify-content-evenly">
-            <li class="nav-item">
-              <a class="fs-6 fs-lg-2" href="">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="fs-6 fs-lg-2" href="">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="fs-6 fs-lg-2" href="">Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="fs-6 fs-lg-2" href="">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!--Main Section-->
-    <main>
-      <!--Promotion Section-->
-      <section class="container text-center my-5">
-        <article
-          class="p-5 d-flex flex-column align-items-center"
+      >
+        <img
           style="
-            background-color: var(--tertiaryColor);
-            border: 1px solid black;
+            position: absolute;
+            width: 60%;
+            transform: translateZ(0px);
+            transition: transform 0.1s linear;
             border-radius: 5px;
           "
-        >
-          <h1
-            class="text-decoration-underline display-4 fw-bold"
-            style="color: var(--primaryColor)"
-          >
-            VIP MEMBERSHIPS
-          </h1>
-          <p class="fs-5 mt-3" style="color: black">
-            Sign up for VIP memberships today and get regular services at
-            discounted rates!
-          </p>
-          <button
-            type="button"
-            id="custom-btn"
-            class="btn w-50"
-            href="book.html"
-          >
-            Explore Options
-          </button>
-        </article>
-      </section>
+          src="Artboard 19.png"
+          alt="Header Image"
+        />
+      </header>
 
-      <img
-        class="mx-auto d-block w-75 custom-img"
-        style="transform: scaleY(-1)"
-        src="vines.png"
-      />
-
-      <!--Carousel Section-->
-      <section>
-        <div
-          id="carousel"
-          style="
-            background-color: var(--secondaryColor);
-            font-family: Satisfy;
-            padding: 20px;
-            border: 5px solid rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-          "
-          class="carousel carousel-dark slide w-100 mx-auto"
-          data-bs-ride="carousel"
-        >
-          <h2
-            class="carousel-title d-block text-center rounded"
-            style="background-color: var(--secondaryColor)"
-          >
-            Meet Our Professionals
-          </h2>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff1.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Pria</h5>
-                      <h6 class="card-title fst-italic m-0">Owner, Colorist</h6>
-                      <p class="card-text fw-light m-1">
-                        "Welcome to Hair Day!"
-                      </p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="carousel-item" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff2.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Garry</h5>
-                      <h6 class="card-title fst-italic m-0">Stylist</h6>
-                      <p class="card-text fw-light m-1">
-                        "Book me and let's chat!"
-                      </p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="carousel-item" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff3.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Celine</h5>
-                      <h6 class="card-title fst-italic m-0">Stylist</h6>
-                      <p class="card-text fw-light m-1">
-                        "I work with all types of hair!"
-                      </p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="carousel-item" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff4.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Sarah</h5>
-                      <h6 class="card-title fst-italic m-0">Manicurist</h6>
-                      <p class="card-text fw-light m-1">
-                        "From french tips to acrylics, I do it all!"
-                      </p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="carousel-item" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff5.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Aaron</h5>
-                      <h6 class="card-title fst-italic m-0">Colorist</h6>
-                      <p class="card-text fw-light m-1">"Color is my life!"</p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="carousel-item" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff6.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Daphne</h5>
-                      <h6 class="card-title fst-italic m-0">Make-up Artist</h6>
-                      <p class="card-text fw-light m-1">
-                        "Art for your most extravagant events!"
-                      </p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="carousel-item" data-bs-interval="9000">
-              <article class="card">
-                <div class="card-body">
-                  <div
-                    id="background-carousel"
-                    class="d-flex flex-column justify-content-end text-center rounded"
-                    style="background-image: url('staff7.webp')"
-                  >
-                    <div
-                      id="staff-card"
-                      class="border border-dark rounded d-flex flex-column"
-                    >
-                      <h5 class="card-title fw-bold m-0">Brittney</h5>
-                      <h6 class="card-title fst-italic m-0">Colorist</h6>
-                      <p class="card-text fw-light m-1">
-                        "Let Britt color your way!"
-                      </p>
-                      <button
-                        type="button"
-                        id="custom-btn"
-                        class="btn btn-primary w-50 d-block mx-auto mb-1"
-                        href="book.html"
-                      >
-                        Book Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <!--Nav Bar-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark text-center w-100 sticky-top py-lg-4"
+      >
+        <div class="container-fluid">
+          <div class="navbar-collapse justify-content-center">
+            <ul class="navbar-nav d-flex w-100 justify-content-evenly">
+              <li class="nav-item">
+                <a class="fs-6 fs-lg-2" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-6 fs-lg-2" href="">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-6 fs-lg-2" href="">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-6 fs-lg-2" href="">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+      </nav>
 
-      <img
-        class="mx-auto d-block w-75 custom-img"
-        style="transform: scaleX(-1)"
-        src="vines.png"
-      />
-    </main>
+      <!--Main Section-->
+      <main>
+        <!--Promotion Section-->
+        <section class="container text-center my-5">
+          <article
+            class="p-5 d-flex flex-column align-items-center"
+            style="
+              background-color: var(--tertiaryColor);
+              border: 1px solid black;
+              border-radius: 5px;
+            "
+          >
+            <h1
+              class="text-decoration-underline display-4 fw-bold"
+              style="color: var(--primaryColor)"
+            >
+              VIP MEMBERSHIPS
+            </h1>
+            <p class="fs-5 mt-3" style="color: black">
+              Sign up for VIP memberships today and get regular services at
+              discounted rates!
+            </p>
+            <button
+              type="button"
+              id="custom-btn"
+              class="btn w-50"
+              href="book.html"
+            >
+              Explore Options
+            </button>
+          </article>
+        </section>
 
-    <!--Footer-->
-    <footer
-      class="d-flex flex-row w-100"
-      style="background-color: var(--tertiaryColor)"
-    >
-      <div class="w-50 d-flex align-items-center justify-content-center">
-        <img class="img-fluid mx-auto d-block" src="Artboard 22.png" />
-      </div>
-      <div
-        class="w-50 d-flex align-items-center justify-content-center text-center"
+        <img
+          class="mx-auto d-block w-75 custom-img"
+          style="transform: scaleY(-1)"
+          src="vines.png"
+        />
+
+        <!--Carousel Section-->
+        <section>
+          <div
+            id="carousel"
+            style="
+              background-color: var(--secondaryColor);
+              font-family: Satisfy;
+              padding: 20px;
+              border: 5px solid rgba(0, 0, 0, 0.2);
+              border-radius: 15px;
+            "
+            class="carousel carousel-dark slide w-100 mx-auto"
+            data-bs-ride="carousel"
+          >
+            <h2
+              class="carousel-title d-block text-center rounded"
+              style="background-color: var(--secondaryColor)"
+            >
+              Meet Our Professionals
+            </h2>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff1.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Pria</h5>
+                        <h6 class="card-title fst-italic m-0">
+                          Owner, Colorist
+                        </h6>
+                        <p class="card-text fw-light m-1">
+                          "Welcome to Hair Day!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff2.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Garry</h5>
+                        <h6 class="card-title fst-italic m-0">Stylist</h6>
+                        <p class="card-text fw-light m-1">
+                          "Book me and let's chat!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff3.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Celine</h5>
+                        <h6 class="card-title fst-italic m-0">Stylist</h6>
+                        <p class="card-text fw-light m-1">
+                          "I work with all types of hair!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff4.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Sarah</h5>
+                        <h6 class="card-title fst-italic m-0">Manicurist</h6>
+                        <p class="card-text fw-light m-1">
+                          "From french tips to acrylics, I do it all!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff5.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Aaron</h5>
+                        <h6 class="card-title fst-italic m-0">Colorist</h6>
+                        <p class="card-text fw-light m-1">
+                          "Color is my life!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff6.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Daphne</h5>
+                        <h6 class="card-title fst-italic m-0">
+                          Make-up Artist
+                        </h6>
+                        <p class="card-text fw-light m-1">
+                          "Art for your most extravagant events!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="9000">
+                <article class="card">
+                  <div class="card-body">
+                    <div
+                      id="background-carousel"
+                      class="d-flex flex-column justify-content-end text-center rounded"
+                      style="background-image: url('staff7.webp')"
+                    >
+                      <div
+                        id="staff-card"
+                        class="border border-dark rounded d-flex flex-column"
+                      >
+                        <h5 class="card-title fw-bold m-0">Brittney</h5>
+                        <h6 class="card-title fst-italic m-0">Colorist</h6>
+                        <p class="card-text fw-light m-1">
+                          "Let Britt color your way!"
+                        </p>
+                        <button
+                          type="button"
+                          id="custom-btn"
+                          class="btn btn-primary w-50 d-block mx-auto mb-1"
+                          href="book.html"
+                        >
+                          Book Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <img
+          class="mx-auto d-block w-75 custom-img"
+          style="transform: scaleX(-1)"
+          src="vines.png"
+        />
+      </main>
+
+      <!--Footer-->
+      <footer
+        class="d-flex flex-row w-100"
+        style="background-color: var(--tertiaryColor)"
       >
-        <p class="m-0">Copyright @ Hair Day / Images are AI generated.</p>
-      </div>
-    </footer>
+        <div class="w-50 d-flex align-items-center justify-content-center">
+          <img class="img-fluid mx-auto d-block" src="Artboard 22.png" />
+        </div>
+        <div
+          class="w-50 d-flex align-items-center justify-content-center text-center"
+        >
+          <p class="m-0">Copyright @ Hair Day / Images are AI generated.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
