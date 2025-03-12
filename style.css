@@ -1,14 +1,7 @@
 :root {
   --primaryColor: rgb(201, 92, 74);
-  --secondaryColor: rgb(83, 83, 211);
+  --secondaryColor: rgb(27, 143, 52);
   --tertiaryColor: rgb(242, 223, 209);
-}
-
-#carousel {
-  padding: 20px;
-  border: 5px solid rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 /* media query for adjusting the sizing of the carousel on medium screens (tablets) */
@@ -103,7 +96,7 @@ article.card {
 }
 
 #staff-card {
-  background-color: var(--primaryColor);
+  background-color: white;
 }
 
 #custom-btn {
